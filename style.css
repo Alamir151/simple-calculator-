@@ -1,0 +1,149 @@
+@import 'https://fonts.google.com/specimen/Spartan';
+:root{
+    --mainColor:hsl(222, 26%, 31%) ;
+    --white:rgb(234, 227, 220);
+    --darkBlue:hsl(224, 36%, 15%);
+    --mediumBlue:hsl(223, 31%, 20%);
+    --likeOrange:hsl(6, 63%, 50%)  ;
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family: 'Spartan';
+    font-size: medium;
+}
+body{
+    background-color: var(--mainColor) ;
+    max-width:100%;
+    min-height: 100%;
+    
+    margin-left:20%;
+    margin-top:5%;
+    scrollbar-width: 0; 
+}
+.center{
+    width:88%;
+    height:50%;
+    background-color: var(--mainColor);
+    padding:8%;
+    margin-top:-9%;
+}
+.center *{
+    color:var(--white);
+    /*justify-content: end;*/
+}
+.center>.numbers{
+    padding-right: 4px;
+    display:flex;
+    float:right;
+}
+.center .inner-center{
+    padding-top:5px;
+    
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:2%;
+}
+.center .inner-center>div{
+    font-size:30px;
+}
+
+
+.center .inner-center .textarea{
+    width:100%;
+    height:120px;
+   
+    
+}
+#textarea input{
+    display:flex;
+    text-align: justify;
+    font: size 40px;
+    text-justify: end;
+    font-weight: 1000;
+}
+#textarea{
+    max-width:100%;
+    min-height:120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--darkBlue);
+    
+  
+    margin-bottom:4px;
+
+}
+#textarea>input{
+    width:100%;
+    height:120px;
+    background-color:var(--darkBlue);
+    
+}
+#textarea>input:hover{
+    text-decoration: none;
+}
+.center .buttons{
+    margin-top:2%;
+    max-width:100%;
+    height: 360px;
+    background-color:var(--mediumBlue);
+    padding:2%;
+    margin-bottom: 4px;
+
+}
+.center .buttons .button{
+    width:100%;
+    height:20%;
+    padding-left:2%;
+}
+.center .buttons .button button{
+    width:20%;
+    height:60%;
+    margin:2%;
+    text-justify: center;
+    color:var(--mainColor);
+    font-weight:700;
+    border-radius:4px;
+    border:-3px solid var(--mediumBlue);
+    text-decoration-color:none;
+    box-shadow:-2px 4px #e9e5e5d3;
+    
+}
+.center .buttons .last{
+    width:100%;
+    height:20%;
+    padding-left:2%;
+}
+.center .buttons .last button{
+    width:41%;
+    margin:4.5%;
+    justify-content:space-around;
+    color:var(--white);
+}
+#del{
+    background-color:  hsl(225, 21%, 49%);
+    color:var(--white);
+    box-shadow: -2px 4px hsl(224, 28%, 35%);
+}
+#first{
+   
+    background-color:  hsl(225, 21%, 49%);
+    box-shadow: -2px 4px hsl(224, 28%, 35%);
+}
+ #last{
+    background-color:var(--likeOrange);
+    box-shadow:-2px 4px hsl(6, 70%, 34%);
+    
+   
+    
+}
+span{
+    font-size:12px;
+}
+

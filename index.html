@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+<body>
+
+
+
+  <div class='center'>
+    <div class="numbers" id='numbers'>
+      <abel for='1'>1</abel>&nbsp;&nbsp;
+      <abel for='2'>2</abel>&nbsp;&nbsp;
+      <abel for='3'>3</abel>
+    </div>
+    <br>
+    <div class="inner-center">
+      <div id='onlydiv'>calc</div>
+      <div class="theme" id='theme'> <span>THEME</span> &nbsp;&nbsp;&nbsp;<input type="radio" checked
+          onclick="theme('hsl(222, 26%, 31%)','#ffffff','rgb(24, 32, 52)','rgb(234, 227, 220)','rgb(208, 63, 47)')"
+          name="1" id="1"><input type="radio" name="1" id="2"
+          onclick="theme('hsl(0, 0%, 90%)','rgb(53, 53, 44)','rgb(237, 237, 237)','hsl(185, 42%, 37%)','');"><input
+          type="radio"
+          onclick="theme('hsl(268, 75%, 9%)','hsl(52, 100%, 62%)','rgb(29, 9, 52)','hsl(268, 47%, 21%)','rgb(55, 127, 134)');"
+          name="1" id="3">
+      </div>
+    </div>
+    <div class='textarea'>
+      <div name="" id="textarea"><input type="text" name="" id="screen" disabled
+          style="font-size:30px;text-align: right;"></div>
+    </div>
+    <div class="buttons">
+      <div class="button" id="buttons"><button id='num'>7</button><button id='num'>8</button><button
+          id='num'>9</button><button id="del">DEL</button></div>
+      <div class="button" id="buttons"><button id='num'>4</button><button id='num'>5</button><button
+          id='num'>6</button><button id="num">+</button></div>
+      <div class="button" id="buttons"><button id='num'>1</button><button id='num'>2</button><button
+          id='num'>3</button><button id="num">-</button></div>
+      <div class="button"><button id="dot">.</button><button id='num'>0</button><button id="num">/</button><button
+          id="num">x</button>
+      </div>
+      <div class="button last">
+        <button id="first">RESET</button><button id="last">=</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="plugin.js">
+
+  </script>
+</body>
+
+</html>
